@@ -56,6 +56,23 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Barcha domenlardan ruxsat berish
+CORS_ALLOW_ALL_ORIGINS = True
+
+# (ixtiyoriy, lekin tavsiya etiladi)
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
+]
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+]
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
